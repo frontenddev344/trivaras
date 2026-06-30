@@ -2,6 +2,16 @@
     .footer-inner {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .hero-inner h1 {
+        font-size: 2rem;
+        line-height: 2.378rem;
+    }
+
+    .hero-sec {
+        padding: 4.25rem 0;
+        height: 38rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -71,6 +81,20 @@
 
 @media (max-width: 575px) {
     .explore-list {
-    grid-template-columns: repeat(1, 1fr);
-}
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stay-updated-inner .form-wrapper-box {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .stay-updated-inner .form-wrapper-box .form-wrapper {
+        width: 100%;
+    }
+
+    .stay-updated-inner .form-wrapper-box .form-wrapper input {
+        width: 100%;
+    }
 }
