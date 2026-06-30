@@ -821,7 +821,7 @@ section.top-destinations {
     justify-content: center;
 }
 
-.inner-content h2 {
+.inner-content h1 {
     color: #ffffff;
     text-align: center;
     font-size: 2.38rem;
@@ -834,7 +834,7 @@ section.privacy-policy-wrapper {
     padding: 60px 0;
 }
 
-.privacy-policy-content h3 {
+.privacy-policy-content h2 {
     color: #000000e8;
     font-size: 22px;
     font-weight: 600;
