@@ -329,6 +329,15 @@ section.top-destinations {
     z-index: 10;
     transition: 0.3s ease;
     border-radius: 50%;
+
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
 }
 
 /* hover effect */
@@ -1114,6 +1123,7 @@ h2.card-title {
     font-size: 2rem;
     text-align: center;
 }
+
 .error-message {
     color: #dc3545;
     font-size: 13px;
