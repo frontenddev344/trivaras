@@ -357,7 +357,7 @@
                     <h2>Plan Your Perfect UK Journey</h2>
                     <p>Discover destination guides, hotel recommendations, and expert travel tips to help you plan an
                         unforgettable journey across the United Kingdom.</p>
-                    <a href="#">Explore Travel Guide</a>
+                    <a href="travel-guide">Explore Travel Guide</a>
                 </div>
             </div>
         </section>
@@ -370,15 +370,19 @@
                     <h2>Stay Updated</h2>
                     <p>Subscribe to our newsletter and be the first to hear about exclusive hotel
                         deals, new destination guides, seasonal travel tips, and upcoming features.</p>
-                    <form action="#">
+                    <form id="newsletterForm" novalidate>
                         <div class="form-wrapper-box">
                             <div class="form-wrapper">
-                                <input type="text" name="name" id="name" placeholder="Your Name">
+                                <input type="text" id="newsletterName" placeholder="Your Name">
+                                <small class="error-message"></small>
                             </div>
+
                             <div class="form-wrapper">
-                                <input type="email" name="email" id="email" placeholder="Your Email">
+                                <input type="email" id="newsletterEmail" placeholder="Your Email">
+                                <small class="error-message"></small>
                             </div>
                         </div>
+
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>

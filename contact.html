@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Trivaras</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ========= Header Section Start ========= -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-content d-flex justify-content-between align-items-center">
+                        <!-- logo -->
+                        <div class="header-logo">
+                            <a href="./">
+                                <img src="images/logo.svg" alt="Trivaras logo">
+
+                            </a>
+                        </div>
+                        <!-- logo -->
+                        <!-- Navigation -->
+                        <div class="menu-list" id="mySidenavs">
+                            <span class="menu-close" onclick="closeNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span>
+                            <ul class="d-flex align-items-center gap-4">
+                                <li>
+                                    <a href="./">Home</a>
+                                </li>
+                                <li>
+                                    <a href="london">London </a>
+                                </li>
+                                <li>
+                                    <a href="edinburgh">Edinburgh</a>
+                                </li>
+                                <li>
+                                    <a href="manchester">Manchester</a>
+                                </li>
+                                <li>
+                                    <a href="liverpool">Liverpool</a>
+                                </li>
+                                <li>
+                                    <a href="travel-guide">Travel Guide</a>
+                                </li>
+                                <li>
+                                    <a href="about">About</a>
+                                </li>
+                                <li>
+                                    <a href="contact" class="active">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Navigation -->
+                        <!-- Toogle Button -->
+                        <div class="menu-icon">
+                            <span onclick="openNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </span>
+                        </div>
+                        <!-- Toogle Button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--========= Header Section End  ========= -->
+
+    <main>
+        <!--========= Inner Banner  ========= -->
+        <section class="inr-bnr" style="background: url(./assets/images/hero-bnr.png);">
+            <div class="container">
+                <div class="inner-content">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </section>
+        <!--========= Inner Banner  ========= -->
+
+        <!--========= Contact form  ========= -->
+        <section class="contact-form">
+            <div class="container">
+                <div class="contact-form-inner">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="contact-form-box">
+                                <p class="contact-label">Send a message</p>
+                                <h2 class="contact-title">Contact form</h2>
+                                <form id="contactForm" novalidate>
+
+                                    <div id="contactSuccessMessage" class="success-message"></div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Full Name</label>
+                                                <input type="text" id="fullName" placeholder="John Smith">
+                                                <small class="error-message"></small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Email Address</label>
+                                                <input type="email" id="contactEmail" placeholder="john@email.com">
+                                                <small class="error-message"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Phone</label>
+                                        <input type="tel" id="contactPhone" placeholder="Phone Number">
+                                        <small class="error-message"></small>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Subject</label>
+                                        <input type="text" id="contactSubject" placeholder="How can we help?">
+                                        <small class="error-message"></small>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Message</label>
+                                        <textarea id="contactMessage"
+                                            placeholder="Write your message here..."></textarea>
+                                        <small class="error-message"></small>
+                                    </div>
+
+                                    <button type="submit" class="send-btn">
+                                        Send Message
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-form-card">
+                                <p class="card-label">Contact details</p>
+                                <h2 class="card-title">Get in touch directly</h2>
+
+                                <div class="detail-row">
+                                    <div class="icon-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="detail-text">
+                                        <div class="dlabel">Address</div>
+                                        <div class="dvalue">447 Broadway, 2nd Floor<br>New York, NY 10013</div>
+                                    </div>
+                                </div>
+
+                                <div class="detail-row">
+                                    <div class="icon-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="detail-text">
+                                        <div class="dlabel">Phone</div>
+                                        <div class="dvalue"><a href="tel:+19177225027">+1 (917) 722-5027</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="detail-row">
+                                    <div class="icon-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                            <path d="m22 7-10 6L2 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="detail-text">
+                                        <div class="dlabel">Email</div>
+                                        <div class="dvalue"><a href="mailto:hello@trivaras.com">hello@trivaras.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========= Contact form  ========= -->
+
+
+    </main>
+
+    <!-- ========= Footer Section Start ========= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="images/logo.svg" alt="Trivaras logo">
+
+                    </a>
+                    <p>Find the perfect place to stay with premium hotels, exclusive offers, and expert travel
+                        inspiration.</p>
+                </div>
+                <div class="footer-link">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="london">London</a></li>
+                        <li><a href="edinburgh">Edinburgh</a></li>
+                        <li><a href="manchester">Manchester</a></li>
+                        <li><a href="liverpool">Liverpool</a></li>
+                        <li><a href="travel-guide">Travel Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-icon">
+                    <h2>Let's Connect</h2>
+                    <div class="contact-info-footer">
+                        <a href="https://maps.app.goo.gl/BRR1HKdNDoLYFyVw9" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21s-6-5.33-6-11a6 6 0 1 1 12 0c0 5.67-6 11-6 11z" />
+                                <circle cx="12" cy="10" r="2.5" />
+                            </svg>
+                            <span> 447 Broadway, 2nd Floor, New York, NY 10013</span>
+                        </a>
+                        <a href="tel:+1(917)722-5027">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3.09 5.18 2 2 0 0 1 5.08 3h2a2 2 0 0 1 2 1.72l.38 2.65a2 2 0 0 1-.57 1.74L8.09 10.91a16 16 0 0 0 5 5l1.8-1.8a2 2 0 0 1 1.74-.57l2.65.38A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <span>+1 (917) 722-5027</span>
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M13.5 22v-8h2.7l.4-3h-3.1V9.2c0-.9.3-1.5 1.6-1.5H17V5.1c-.4-.1-1.3-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2H8v3h2.8v8h2.7z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.3L6.3 22H2.2l7.3-8.4L1 2h6.3l4.4 5.7L18.9 2zm-1.1 18h1.7L6.1 3.9H4.3L17.8 20z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+
+                    <div class="footer-disclaimer">
+                        <h3>Disclaimer</h3>
+
+                        <p>
+                            The information provided on <strong><a href="./">Trivaras.com</a></strong> is for general
+                            informational and
+                            educational purposes only. While we strive to keep all hotel listings, destination guides,
+                            reviews, and travel information accurate and up to date, we make no guarantees regarding
+                            completeness, reliability, or accuracy.
+                        </p>
+
+                        <p>
+                            Hotel availability, pricing, travel regulations, local conditions, and services may change
+                            without notice. Please verify important information directly with the respective hotels,
+                            airlines, tour operators, or service providers before making bookings.
+                        </p>
+
+                        <p>
+                            Some content may include sponsored collaborations or affiliate links. If you purchase
+                            through
+                            these links, <a href="./">Trivaras.com</a> may earn a commission at no additional cost to
+                            you. This helps us
+                            continue providing high-quality travel content while maintaining editorial independence.
+                        </p>
+
+                        <p>
+                            By using <a href="./">Trivaras.com</a>, you agree that the website shall not be held liable
+                            for any loss,
+                            injury, expense, or damages arising from the use of information published on this website.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright-text">
+                    <p> © 2026 <strong><a href="./">Trivaras.com</a></strong>. All Rights Reserved.</p>
+                </div>
+                <div class="ssl">
+                    <img src="assets/images/ssl.png" alt="ssl">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--========= Footer Section End  ========= -->
+
+    <!--  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form = document.getElementById("contactForm");
+            const successMessage = document.getElementById("contactSuccessMessage");
+
+            const fields = [
+                {
+                    input: document.getElementById("fullName"),
+                    message: "Full Name is required."
+                },
+                {
+                    input: document.getElementById("contactEmail"),
+                    message: "Email Address is required."
+                },
+                {
+                    input: document.getElementById("contactPhone"),
+                    message: "Phone Number is required."
+                },
+                {
+                    input: document.getElementById("contactSubject"),
+                    message: "Subject is required."
+                },
+                {
+                    input: document.getElementById("contactMessage"),
+                    message: "Message is required."
+                }
+            ];
+
+            // Remove error while typing
+            fields.forEach(field => {
+
+                field.input.addEventListener("input", function () {
+
+                    this.classList.remove("input-error");
+                    this.nextElementSibling.innerText = "";
+
+                });
+
+            });
+
+            form.addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                let isValid = true;
+
+                successMessage.innerText = "";
+
+                fields.forEach(field => {
+
+                    field.input.classList.remove("input-error");
+                    field.input.nextElementSibling.innerText = "";
+
+                    if (field.input.value.trim() === "") {
+
+                        field.input.classList.add("input-error");
+                        field.input.nextElementSibling.innerText = field.message;
+
+                        isValid = false;
+                    }
+
+                });
+
+                // Email Validation
+                const email = document.getElementById("contactEmail");
+
+                if (email.value.trim() !== "") {
+
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    if (!emailPattern.test(email.value.trim())) {
+
+                        email.classList.add("input-error");
+                        email.nextElementSibling.innerText = "Please enter a valid email.";
+
+                        isValid = false;
+                    }
+
+                }
+
+                // Phone Validation
+                const phone = document.getElementById("contactPhone");
+
+                if (phone.value.trim() !== "") {
+
+                    const phonePattern = /^[0-9]{10,15}$/;
+
+                    if (!phonePattern.test(phone.value.trim())) {
+
+                        phone.classList.add("input-error");
+                        phone.nextElementSibling.innerText = "Please enter a valid phone number.";
+
+                        isValid = false;
+                    }
+
+                }
+
+                if (isValid) {
+
+                    successMessage.innerText = "Thank you! Your message has been sent successfully.";
+
+                    form.reset();
+
+                    setTimeout(function () {
+                        successMessage.innerText = "";
+                    }, 3000);
+
+                }
+
+            });
+
+        }); 
+    </script>
+</body>
+
+</html>
