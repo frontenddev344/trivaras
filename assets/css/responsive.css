@@ -69,4 +69,8 @@
     }
 }
 
-@media (max-width: 575PX) {}
+@media (max-width: 575px) {
+    .explore-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
