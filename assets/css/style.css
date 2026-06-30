@@ -809,3 +809,63 @@ section.top-destinations {
     opacity: 1;
     color: #fff;
 }
+
+/*  */
+.inr-bnr {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 30.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-content h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.38rem;
+    font-weight: 600;
+    font-family: "Urbanist", sans-serif;
+}
+
+section.privacy-policy-wrapper {
+    background-color: #ecf2f6;
+    padding: 60px 0;
+}
+
+.privacy-policy-content h3 {
+    color: #000000e8;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Urbanist", sans-serif;
+}
+
+.privacy-policy-content ul li {
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    font-family: var(--heading-font);
+
+}
+
+.privacy-policy-content ul li::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.privacy-policy-content p {
+    font-family: var(--heading-font);
+    font-size: 16px;
+}
+
+.privacy-policy-content ul {
+    margin-bottom: 1rem;
+}
