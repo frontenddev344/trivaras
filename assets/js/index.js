@@ -134,3 +134,35 @@ faqItems.forEach(item => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cookieAlert = document.querySelector(".cookie-alert");
+    const acceptBtn = document.querySelector(".accept-cookies");
+    const rejectBtn = document.querySelector(".reject-cookies");
+
+    // Show only if no choice has been made
+    if (!localStorage.getItem("cookieConsent")) {
+        setTimeout(function () {
+            cookieAlert.classList.add("show");
+        }, 500);
+    }
+
+    // Accept
+    acceptBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        localStorage.setItem("cookieConsent", "accepted");
+        cookieAlert.classList.remove("show");
+    });
+
+    // Reject
+    rejectBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // If you want it to show again on next page load
+        localStorage.removeItem("cookieConsent");
+
+        cookieAlert.classList.remove("show");
+    });
+
+});

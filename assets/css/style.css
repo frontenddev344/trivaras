@@ -1497,3 +1497,79 @@ section.faq-section {
     background-color: #ecf2f6;
     padding: 60px 0;
 }
+
+/* Cookies CSS Start */
+.cookie-alert {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 320px;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    border: 3px solid #2739FF;
+    border-radius: 1.875rem;
+}
+
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookie-alert .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--charcoal);
+}
+
+.cookie-alert .card-text {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+.cookie-alert .card-text a {
+    color: var(--theme);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.btn-toolbar .butn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9375rem;
+}
+
+.accept-cookies {
+    padding: 0.875rem 1.875rem;
+    border-radius: 3.125rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-family: var(--heading-font);
+    border: 0.125rem solid #2739ff;
+    background-color: #2739ff;
+    color: var(--white);
+}
+
+.reject-cookies {
+    padding: 0.875rem 1.875rem;
+    border-radius: 3.125rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-family: var(--heading-font);
+    border: 0.125rem solid #2739ff;
+    background-color: transparent;
+    color: #2739ff;
+}
+
+/* Cookies CSS End */
