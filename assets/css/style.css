@@ -667,6 +667,11 @@ section.top-destinations {
     gap: 30px;
 }
 
+.footer-logo img {
+    max-width: 150px;
+    width: 100%;
+}
+
 .footer-inner h2 {
     color: #fff;
     font-size: 24px;
