@@ -77,6 +77,26 @@
         gap: 20px;
 
     }
+
+    .what-we-share .row .col-lg-3.col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .transform-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .london-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .about_cards-inr .row .col-md-6 {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -97,4 +117,19 @@
     .stay-updated-inner .form-wrapper-box .form-wrapper input {
         width: 100%;
     }
+
+    .footer-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .transform-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .london-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
