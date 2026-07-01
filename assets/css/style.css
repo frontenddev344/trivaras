@@ -701,6 +701,34 @@ section.top-destinations {
     opacity: .6;
 }
 
+.footer-link ul li a:hover {
+    color: #2739FF;
+    opacity: 1;
+    padding-left: 6px;
+}
+
+.menu-list ul li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #2739FF;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.menu-list ul li a:hover {
+    color: #2739FF;
+}
+
+.menu-list ul li a:hover::before,
+.menu-list ul li a.active::before {
+    width: 100%;
+}
+
+
 .footer-logo p {
     font-size: 1rem;
     font-weight: 400;
