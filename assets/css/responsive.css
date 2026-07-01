@@ -12,6 +12,10 @@
         padding: 4.25rem 0;
         height: 38rem;
     }
+
+    .inr-bnr {
+        height: 24.625rem;
+    }
 }
 
 @media (max-width: 991px) {
